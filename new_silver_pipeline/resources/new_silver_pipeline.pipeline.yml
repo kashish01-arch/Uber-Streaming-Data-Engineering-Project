@@ -1,0 +1,20 @@
+resources:
+  pipelines:
+    new_silver_pipeline:
+      name: new_silver_pipeline
+      libraries:
+        - glob:
+            include: ../src/new_silver_pipeline/transformations/my_transformation.py
+        - glob:
+            include: ../src/new_silver_pipeline/transformations/silver_OBT.sql
+        - glob:
+            include: ../src/new_silver_pipeline/transformations/New File 2026-11-02 11:11:52.sql
+        - glob:
+            include: ../src/new_silver_pipeline/transformations/model.py
+      catalog: uber_catalog
+      channel: CURRENT
+      continuous: false
+      photon: true
+      root_path: ../src/new_silver_pipeline
+      schema: uber_schema
+      serverless: true

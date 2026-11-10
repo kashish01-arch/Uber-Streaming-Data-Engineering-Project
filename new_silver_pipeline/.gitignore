@@ -1,0 +1,4 @@
+.databricks/
+
+# Stray nested copy of the Git repo swept into src/ during bundle generation — do not track
+src/new_silver_pipeline/transformations/Uber-Streaming-Data-Engineering-Project/
